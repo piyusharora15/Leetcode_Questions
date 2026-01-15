@@ -90,12 +90,12 @@ class Solution {
 class Solution {
     public int numDecodings(String s) {
         int n = s.length();
-        int prev2 = 1; // dp[i-2]
-        int prev1 = 0; // dp[i-1]
+        int prev2 = 0;
+        int prev1 = 1;
         for(int i=1;i<=n;i++){
             int curr = 0;
             if(s.charAt(i-1) != '0'){
-                curr += prev1 == 0 ? 1 : prev1;
+                curr += prev1;
             }
             if(i > 1 && ((s.charAt(i-2) == '1' && s.charAt(i-1) <= '9') || (s.charAt(i-2) == '2' && s.charAt(i-1) <= '6'))){
                 curr += prev2;
