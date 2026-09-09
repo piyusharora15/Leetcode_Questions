@@ -1,6 +1,6 @@
-// Problem Link: https://leetcode.com/problems/missing-number?envType=problem-list-v2&envId=auswip1r
-
 /*
+
+Problem Link: https://leetcode.com/problems/missing-number?envType=problem-list-v2&envId=auswip1r
 
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
