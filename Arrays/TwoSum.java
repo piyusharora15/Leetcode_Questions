@@ -1,7 +1,6 @@
-// Problem Link: https://leetcode.com/problems/two-sum/
-
-
 /*
+
+Problem Link: https://leetcode.com/problems/two-sum/
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -38,6 +37,12 @@ Optimal Approach: Using Hash Map.
 4. If the complement does not exist, we add the current number and its index to the hash map.
 5. If we finish iterating through the array without finding a pair, we return [-1, -1] to indicate that no solution was found.
 
+
+Dry Run:
+Let's take an example to understand the dry run of the optimal approach.
+Input: nums = [2,7,11,15], target = 9
+- i = 0: nums[0] = 2, complement = 9 - 2 = 7. 7 is not in the hash map, so we add (2, 0) to the hash map.
+- i = 1: nums[1] = 7, complement = 9 - 7 = 2. 2 is in the hash map (at index 0), so we return [0, 1].
 
 Time Complexity: O(n) - We traverse the array once.
 Space Complexity: O(n) - In the worst case, we could be storing all n elements in the hash map.
